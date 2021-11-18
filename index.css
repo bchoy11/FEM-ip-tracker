@@ -4,20 +4,27 @@
     font-family: 'Rubik';
 }
 
+html{
+    height: 100%;
+}
+
 h1{
     text-align: center;
     font-size: 1.5rem;
     color: white;
     font-weight: 400;
+    margin-top:0;
+    margin-bottom: 1.5rem;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 2rem 2rem 0 2rem;
     background: url('./images/pattern-bg.png');
     background-repeat: no-repeat;
     background-position: top;
+    min-height: 100%;
 }
 
 input{
@@ -34,5 +41,17 @@ input{
     font-weight: 400;
     letter-spacing: .05rem;
     background: white;
+    padding: 1rem;
 }
 
+.data{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.footer{
+    text-align: center;
+    bottom: 0;
+}
