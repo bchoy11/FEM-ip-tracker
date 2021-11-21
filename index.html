@@ -27,14 +27,22 @@
       <button type='button' onclick="getData()">Submit</button>
 
   <div class='report'>
-    <h3>IP ADDRESS</h3>
-      <div class='data' id='ip'></div>
-    <h3>LOCATION</h3>
-      <div class='data' id='location'></div>
-    <h3>TIMEZONE</h3>
-      <div class='data' id='timezone'></div> <!-- add offset value dynamically using the API -->
-    <h3>ISP</h3>
-      <div class='data' id='isp'></div>
+    <div class='subreport'>
+      <h3>IP ADDRESS</h3>
+        <div class='data' id='ip'></div>
+    </div>
+    <div class='subreport'>
+      <h3>LOCATION</h3>
+        <div class='data' id='location'></div>
+    </div>
+    <div class='subreport'>
+      <h3>TIMEZONE</h3>
+        <div class='data' id='timezone'></div> <!-- add offset value dynamically using the API -->
+    </div> 
+    <div class='subreport'>
+      <h3>ISP</h3>
+        <div class='data' id='isp'></div>
+    </div>
   </div>
   
   <div class="attribution footer">

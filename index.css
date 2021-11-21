@@ -29,6 +29,8 @@ body{
 
 input{
     font-size: 1.15rem;
+    padding: 1rem;
+    border-radius: 20px;
 }
 
 .report{
@@ -54,4 +56,20 @@ input{
 .footer{
     text-align: center;
     bottom: 0;
+}
+
+@media(min-width: 725px){
+    .report{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    input, button{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 }
