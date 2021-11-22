@@ -27,17 +27,37 @@ body{
     min-height: 100%;
 }
 
-input{
+.input-ip{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input, button{
     font-size: 1.15rem;
     padding: 1rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
+}
+
+input[type='text']{
+    width: 30rem;
+    padding-right: 1.5rem;
+}
+
+button[type='submit']{
+    height: 4rem;
+    width: 4rem;
+    margin-left: -3rem;
+    background-color: black;
+    border-radius: 0 1.25rem 1.25rem 0;
+    border: 0;
 }
 
 .report{
     border: solid black;
     text-align: center;
     margin-top: 2rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     font-size: .6rem;
     color: hsl(0, 0%, 59%);
     font-weight: 400;
@@ -66,10 +86,6 @@ input{
         justify-content: center;
         margin-left: 7%;
         margin-right: 7%;
-    }
-
-    input, button{
-        margin-left: 25%;
-        margin-right: 25%;
+        padding: 2rem;
     }
 }
