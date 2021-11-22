@@ -78,6 +78,10 @@ button[type='submit']{
     bottom: 0;
 }
 
+#map { 
+    height: 180px;
+}
+
 @media(min-width: 725px){
     .report{
         display: flex;
