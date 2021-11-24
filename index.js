@@ -28,14 +28,18 @@ function getData(){
                 location.append(city+', '+region+' '+zip);
                 timezone.append('UTC '+zone);
                 isp.append(servicer);
+                console.log(data);
+                displayMap(data.location.lat, data.location.lng);
             }
         });
         });
 }
 
-const mymap = L.map('map').setView([51.505, -0.09], 13);
-const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-const tileURL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-const tiles = L.tileLayer(tileURL, {attribution});
+function displayMap(lat, lng){
+    const mymap = L.map('map').setView([lat, lng], 13);
+    const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+    const tileURL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const tiles = L.tileLayer(tileURL, {attribution});
 
-tiles.addTo(mymap);
+    tiles.addTo(mymap);
+}
