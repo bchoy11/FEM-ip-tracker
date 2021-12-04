@@ -20,11 +20,16 @@ h1{
 body{
     display: flex;
     flex-direction: column;
-    margin: 2rem 2rem 0 2rem;
+    margin: 2rem 0 0 0;
     background: url('./images/pattern-bg.png');
     background-repeat: no-repeat;
     background-position: top;
+    background-size: auto 325px;
     min-height: 100%;
+}
+
+.input-ip,.report{
+    margin: 0 2rem 0 2rem;
 }
 
 .input-ip{
@@ -53,6 +58,10 @@ button[type='submit']{
     border: 0;
 }
 
+.display{
+    position: relative;
+}
+
 .report{
     border: solid black;
     text-align: center;
@@ -64,6 +73,9 @@ button[type='submit']{
     letter-spacing: .05rem;
     background: white;
     padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 70%;
 }
 
 .data{
@@ -79,7 +91,10 @@ button[type='submit']{
 }
 
 #map { 
-    height: 180px;
+    height: 500px;
+    top: 175px;
+    z-index: -1;
+    position: relative;
 }
 
 @media(min-width: 725px){
