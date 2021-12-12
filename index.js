@@ -36,10 +36,15 @@ function getData(){
 }
 
 function displayMap(lat, lng){
-    const mymap = L.map('map').setView([lat, lng], 13);
+    const mymap = L.map('map',{zoomControl: false}).setView([lat, lng], 13);
     const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
     const tileURL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     const tiles = L.tileLayer(tileURL, {attribution});
+    const myIcon = L.icon({
+        iconUrl: 'images/icon-location.svg'
+    });
+    const marker = L.marker([lat, lng], {icon: myIcon});
 
     tiles.addTo(mymap);
+    marker.addTo(mymap);
 }

@@ -63,7 +63,6 @@ button[type='submit']{
 }
 
 .report{
-    border: solid black;
     text-align: center;
     margin-top: 2rem;
     border-radius: 1.25rem;
